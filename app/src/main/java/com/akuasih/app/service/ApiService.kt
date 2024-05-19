@@ -12,7 +12,8 @@ interface ApiService {
 
     @GET("/condition/api/histories")
     suspend fun getHistories(
-        @Query("ref_id") refId: Int
+        @Query("ref_id") refId: Int,
+        @Query("date") date: String,
     ): List<HistoryModel>
 
     @GET("/condition/api/calculate")

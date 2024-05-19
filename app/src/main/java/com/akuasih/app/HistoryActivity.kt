@@ -1,5 +1,6 @@
 package com.akuasih.app
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -15,6 +16,9 @@ import com.akuasih.app.databinding.ActivityHistoryBinding
 import com.akuasih.app.model.HistoryModel
 import com.akuasih.app.service.ServiceHelper
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 class HistoryActivity : AppCompatActivity() {
 
@@ -23,6 +27,11 @@ class HistoryActivity : AppCompatActivity() {
     private var nodeName: String = ""
 
     private val historyList by lazy { MutableLiveData<List<HistoryModel>>() }
+    private val selectedDate by lazy {
+        val date = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            .format(Calendar.getInstance().time)
+        MutableLiveData(date)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,10 +48,27 @@ class HistoryActivity : AppCompatActivity() {
     private fun initLayout() {
         binding.title.title = nodeName
 
-        binding.historyRefresh.setOnRefreshListener { loadData() }
+        binding.historyRefresh.setOnRefreshListener {
+            val date = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                .format(Calendar.getInstance().time)
+            loadData(selectedDate.value ?: date)
+        }
 
         binding.historyRecycler.layoutManager = LinearLayoutManager(applicationContext)
         binding.historyRecycler.adapter = HistoryListAdapter(emptyList(), ::onClickItem)
+
+        binding.date.setOnClickListener {
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+            val datePicker = DatePickerDialog(
+                this@HistoryActivity,
+                { _, y, m, d -> selectedDate.value = "$y-${m + 1}-$d" },
+                year, month, day
+            )
+            datePicker.show()
+        }
 
         historyList.observe(this@HistoryActivity) {
             binding.historyRecycler.adapter = HistoryListAdapter(it, ::onClickItem)
@@ -64,7 +90,14 @@ class HistoryActivity : AppCompatActivity() {
             }
         }
 
-        loadData()
+        selectedDate.observe(this@HistoryActivity) {
+            binding.date.text = it
+            loadData(it)
+        }
+
+        val date = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            .format(Calendar.getInstance().time)
+        loadData(selectedDate.value ?: date)
     }
 
     private fun onClickItem(history: HistoryModel) {
@@ -81,10 +114,10 @@ class HistoryActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun loadData() {
+    private fun loadData(date: String) {
         lifecycleScope.launch {
             try {
-                val data = ServiceHelper.api.getHistories(nodeId)
+                val data = ServiceHelper.api.getHistories(nodeId, date)
                 historyList.value = data
             } catch (e: Exception) {
                 Toast.makeText(applicationContext, e.message, Toast.LENGTH_SHORT).show()
