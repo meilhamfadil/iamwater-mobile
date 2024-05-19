@@ -46,6 +46,22 @@ class HistoryActivity : AppCompatActivity() {
 
         historyList.observe(this@HistoryActivity) {
             binding.historyRecycler.adapter = HistoryListAdapter(it, ::onClickItem)
+
+            it.firstOrNull()?.let { cur ->
+                binding.ph.text = cur.ph.toString()
+                binding.metal.text = cur.metals.toString()
+                binding.tds.text = cur.particles.toString()
+                binding.oxygen.text = cur.oxygen.toString()
+                val output = cur.output ?: 999.0
+                binding.status.text = when {
+                    output <= 30 -> "Sangat Buruk"
+                    output <= 42.5 -> "Buruk"
+                    output <= 60 -> "Sedang"
+                    output <= 80 -> "Baik"
+                    output <= 100 -> "Sangat Baik"
+                    else -> "Belum di Kalkulasi"
+                }
+            }
         }
 
         loadData()

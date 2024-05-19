@@ -14,4 +14,52 @@
     <string name="label_output">Output</string>
     <string name="label_condition">Condition</string>
     <string name="label_category">Category</string>
+    <string name="label_status">Status</string>
+    <string name="label_last_condition">Last Condition</string>
+
+    <!-- IMPORT -->
+    <string name="welcome_title">Selamat Datang di Akuasih</string>
+    <string name="welcome_message">Aplikasi terbaik untuk memantau dan menjaga kualitas air bersih.</string>
+    <string name="start_button_text">Mulai</string>
+    <string name="pilih_status_air">PILIH STATUS AIR YANG AKAN DILIHAT</string>
+    <string name="nodea">NODE A</string>
+    <string name="nodeb">NODE B</string>
+    <string name="dataairnda">DATA AIR NODE A</string>
+    <string name="dataairndb">DATA AIR NODE B</string>
+    <string name="ph">pH</string>
+    <string name="kandunganlogam">Kandungan Logam</string>
+    <string name="warna">Warna</string>
+    <string name="oksigen">Oksigen</string>
+    <string name="waterstat">STATUS AIR</string>
+    <string name="kembali">Kembali</string>
+    <string name="infohardware">Informasi Hardware</string>
+    <string name="sensorph">1. Sensor pH</string>
+    <string name="penjelasanph">Ph meter adalah jenis alat ukur untuk mengukur derajat keasaman atau kebasaan suatu cairan, pada Ph meter digital terdapat elektroda khusus yang berfungsi untuk mengukur pH bahan-bahan semi padat, elektroda (probe pengukur) terhubung sebuah alat elektronik yang mengukur dan menampilkan nilai pH.
+        Probe atau Elektroda merupakan bagian penting dari pH meter, Elektroda adalah batang seperti struktur biasanya terbuat dari kaca.
+        Pada Gambar diatas dapat dilihat bagian bawah elektroda ada bohlam, bohlam merupakan bagian sensitif dari probe yang berisi sensor. Jangan pernah menyentuh bola dengan tangan dan bersihkan dengan bantuan kertas tisu dengan tangan sangat lembut.
+        Untuk mengukur pH larutan, probe dicelupkan ke dalam larutan. Probe dipasang di lengan dikenal sebagai probe lengan.</string>
+    <string name="bagianphmeter"></string>
+    <string name="bphmeter">Bagian-Bagian pH Meter</string>
+    <string name="b1">Elektroda Kaca</string>
+    <string name="bp1">Berfungsi sebagai kutub antara dua elektrode ph meter yang tercelup ke dalam larutan.
+        Pada ujung elektrode ada bulb berfungsi tempat pertukaran ion positif (H+).</string>
+    <string name="b2">Eletroda Referensi</string>
+    <string name="bp2">Berfungsi sebagai kutub lain selain elektrode kaca yang terendam larutan tertentu yang terbentuk rangkaian listrik.
+        Elektrode ini dirancang punya nilai potensial yang tetap pada kondisi larutan apapun.</string>
+    <string name="b3">Termometer</string>
+    <string name="bp3">Bagian sensor temperatur ph meter ini menjadi satu komponen wajib pH meter, karena nilai pH sangat dipengaruhi oleh temperatur larutan.</string>
+    <string name="b4">Amplifier</string>
+    <string name="bp4">Berfungsi sebagai penguat voltase(amplifier). Voltase yang dihasilkan oleh dua elektrode pH meter terlalu rendah yakni sekitar 60 mV untuk setiap tingkatan nilai pH.</string>
+    <string name="b5">Mikroprosesor</string>
+    <string name="bp5">Berfungsi mengolah nilai voltase yang dikirim amplifier menjadi nilai pH. Perhitungan kompensasi nilai temperatur larutan terukur, juga dihitung oleh mikroprosesor ini.</string>
+    <string name="sensoroksigen">2. Sensor Oksigen</string>
+    <string name="o1">Sensor ini digunakan untuk mengukur kadar oksigen terlarut dalam air (Dissolved Oxygen, DO) dengan menghasilkan sinyal analog sebagai respons terhadap konsen2trasi oksigen dalam air.
+        Sensor ini menggunakan prinsip elektrokimia atau optik untuk mengukur DO dan mengubah hasilnya menjadi sinyal analog yang dapat diolah dan ditampilkan.
+    </string>
+    <string name="sensorwarna">3. Sensor Warna</string>
+    <string name="s1">Sensor TCS 3200 adalah sensor terprogram yang terdiri dari 64 buah photodioda sebagai pendeteksi intensitas cahaya pada warna obyekserta filter frekuensi sebagai transduser yang berfungsi untuk mengubah arus menjadi frekuensi,
+        selain itu sensor tersebut memiliki lensa fokus yangberguna untuk mempertajam pendeteksian photodioda terhadap intensitas cahaya dengan jarak pembacaan 2 mm dari lensa IC. Sensor TCS 3200 dapat membaca 4 mode warna yaitu, Red, Green, Blue dan clear melalui 64buah photo dioda yang terbagi menjadi 4 bagian yaitu,
+        16 photo dioda untuk warna merah, 16 photodioda untuk warna hijau, 16 photo dioda untuk warna biru dan 16 photo dioda lainnya untuk pembacaan warna clear</string>
+    <string name="tempatpenelitian">Tempat Penelitian</string>
+    <string name="alamatpenelitian">Kampung Bobos, RT 01/ RW 10 Desa Putrajawa Kecamatan Selaawi</string>
 </resources>

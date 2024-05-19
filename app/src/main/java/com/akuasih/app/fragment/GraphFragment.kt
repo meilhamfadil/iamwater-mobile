@@ -85,9 +85,8 @@ class GraphFragment : Fragment(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val selectedNode = nodes.value?.get(position)?.id
-        if (selectedNode != null)
-            loadWeb(selectedNode, selectedType.value ?: "ph")
+        val node = nodes.value?.get(position)?.id
+        selectedNode.value = node
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {}

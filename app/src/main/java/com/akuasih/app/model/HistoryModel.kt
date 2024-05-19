@@ -19,5 +19,7 @@ data class HistoryModel(
     @SerializedName("source_id")
     val sourceId: Int,
     @SerializedName("updated_at")
-    val updatedAt: String?
+    val updatedAt: String?,
+    @SerializedName("output")
+    val output: Double?,
 )
