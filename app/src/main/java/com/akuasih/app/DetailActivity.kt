@@ -45,20 +45,20 @@ class DetailActivity : AppCompatActivity() {
     private fun initLayout() {
         history.observe(this@DetailActivity) {
             it.preProcess.apply {
-                val nodePhLabel = ":${nodePh}"
+                val nodePhLabel = ": ${nodePh}"
                 binding.ph.text = nodePhLabel
-                val nodeMetalLabel = ":${nodeMetal}"
+                val nodeMetalLabel = ": ${nodeMetal}"
                 binding.metal.text = nodeMetalLabel
-                val nodeOxygenLabel = ":${nodeOxygen}"
+                val nodeOxygenLabel = ": ${nodeOxygen}"
                 binding.oxygen.text = nodeOxygenLabel
-                val nodeTdsLabel = ":${nodeTds}"
+                val nodeTdsLabel = ": ${nodeTds}"
                 binding.tds.text = nodeTdsLabel
 
-                val areaLabel = ":${area}"
+                val areaLabel = ": ${area}"
                 binding.area.text = areaLabel
-                val momentLabel = ":${momen}"
+                val momentLabel = ": ${momen}"
                 binding.moment.text = momentLabel
-                val outputLabel = ":${output}"
+                val outputLabel = ": ${output}"
                 binding.output.text = outputLabel
                 val categoryLabel = when {
                     output <= 30 -> ": Sangat Buruk"
