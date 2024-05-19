@@ -26,7 +26,6 @@
     <string name="nodeb">NODE B</string>
     <string name="dataairnda">DATA AIR NODE A</string>
     <string name="dataairndb">DATA AIR NODE B</string>
-    <string name="ph">pH</string>
     <string name="kandunganlogam">Kandungan Logam</string>
     <string name="warna">Warna</string>
     <string name="oksigen">Oksigen</string>
@@ -62,4 +61,5 @@
         16 photo dioda untuk warna merah, 16 photodioda untuk warna hijau, 16 photo dioda untuk warna biru dan 16 photo dioda lainnya untuk pembacaan warna clear</string>
     <string name="tempatpenelitian">Tempat Penelitian</string>
     <string name="alamatpenelitian">Kampung Bobos, RT 01/ RW 10 Desa Putrajawa Kecamatan Selaawi</string>
+    <string name="label_history">Histories</string>
 </resources>

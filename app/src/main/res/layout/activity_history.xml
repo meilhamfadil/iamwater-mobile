@@ -41,6 +41,17 @@
             android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="@string/label_ph"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -68,6 +79,17 @@
             android:gravity="center"
             android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="@string/label_metal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="48dp"
@@ -97,6 +119,17 @@
             android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="@string/label_oxygen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -124,6 +157,17 @@
             android:gravity="center"
             android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="@string/label_tds"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="48dp"
@@ -193,7 +237,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/label_last_condition"
+            android:text="@string/label_history"
             android:textSize="20sp"
             android:textStyle="bold" />
 
