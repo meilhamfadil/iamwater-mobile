@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/nodeFragment">
+    app:startDestination="@id/graphFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.akuasih.app.fragment.HomeFragment"
+        android:id="@+id/graphFragment"
+        android:name="com.akuasih.app.fragment.GraphFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_graph">
         <action
             android:id="@+id/action_homeFragment_to_nodeFragment"
             app:destination="@id/nodeFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/nodeFragment"
         android:name="com.akuasih.app.fragment.NodeFragment"
         android:label="fragment_node"
-        tools:layout="@layout/fragment_node" >
+        tools:layout="@layout/fragment_node">
         <action
             android:id="@+id/action_nodeFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
@@ -27,9 +27,9 @@
         android:id="@+id/infoFragment"
         android:name="com.akuasih.app.fragment.InfoFragment"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_info">
         <action
             android:id="@+id/action_infoFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/graphFragment" />
     </fragment>
 </navigation>

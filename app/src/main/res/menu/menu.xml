@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<!--    <item-->
-<!--        android:id="@+id/homeFragment"-->
-<!--        android:icon="@drawable/icon_home"-->
-<!--        android:title="@string/menu_home" />-->
+    <item
+        android:id="@+id/graphFragment"
+        android:icon="@drawable/icon_graph"
+        android:title="@string/menu_graph" />
     <item
         android:id="@+id/nodeFragment"
         android:icon="@drawable/icon_list"
