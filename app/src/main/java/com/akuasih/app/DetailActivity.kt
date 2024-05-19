@@ -60,6 +60,15 @@ class DetailActivity : AppCompatActivity() {
                 binding.moment.text = momentLabel
                 val outputLabel = ":${output}"
                 binding.output.text = outputLabel
+                val categoryLabel = when {
+                    output <= 30 -> ": Sangat Buruk"
+                    output <= 42.5 -> ": Buruk"
+                    output <= 60 -> ": Sedang"
+                    output <= 80 -> ": Baik"
+                    else -> ": Sangat Baik"
+                }
+                binding.category.text = categoryLabel
+
 
                 binding.webview.settings.javaScriptEnabled = true
                 binding.webview.loadUrl("https://akuasih.my.id/condition?ref_id=${nodeId}")

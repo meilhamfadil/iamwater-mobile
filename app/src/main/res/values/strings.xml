@@ -13,4 +13,5 @@
     <string name="label_moment">Total Momen</string>
     <string name="label_output">Output</string>
     <string name="label_condition">Condition</string>
+    <string name="label_category">Category</string>
 </resources>
