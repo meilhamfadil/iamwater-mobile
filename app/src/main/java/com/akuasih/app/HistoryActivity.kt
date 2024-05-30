@@ -54,6 +54,16 @@ class HistoryActivity : AppCompatActivity() {
             loadData(selectedDate.value ?: date)
         }
 
+        binding.qos.setOnClickListener {
+            val intent = Intent(applicationContext, QosActivity::class.java)
+            intent.putExtras(
+                bundleOf(
+                    QosActivity.PARAMS_NODE_ID to nodeId,
+                )
+            )
+            startActivity(intent)
+        }
+
         binding.historyRecycler.layoutManager = LinearLayoutManager(applicationContext)
         binding.historyRecycler.adapter = HistoryListAdapter(emptyList(), ::onClickItem)
 

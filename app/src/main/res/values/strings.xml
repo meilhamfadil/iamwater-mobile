@@ -62,4 +62,5 @@
     <string name="tempatpenelitian">Tempat Penelitian</string>
     <string name="alamatpenelitian">Kampung Bobos, RT 01/ RW 10 Desa Putrajawa Kecamatan Selaawi</string>
     <string name="label_history">Histories</string>
+    <string name="label_qos">QoS</string>
 </resources>
