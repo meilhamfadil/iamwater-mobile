@@ -36,6 +36,7 @@
             android:layout_width="214dp"
             android:layout_height="135dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/sensorph"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="173dp" />
@@ -57,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/bagianphmeter" />
 
         <TextView
@@ -140,6 +142,7 @@
             android:layout_width="254dp"
             android:layout_height="135dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/sensoroksigen" />
 
         <TextView
@@ -160,6 +163,7 @@
             android:layout_width="157dp"
             android:layout_height="161dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/sensorwarna" />
 
         <TextView
@@ -167,6 +171,48 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/o1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_sensor_ec"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sensor_ec" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="@string/sensor_electrical_conductivity_yang_digunakan_adalah_df_robot_dfr0300_gravity_analog_electrical_conductivity_sensor_meter_v2_memiliki_akurasi_dengan_besaran_error_hanya_sebesar_5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_sensor_tds"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sensor_tds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="@string/sensor_electrical_conductivity_yang_digunakan_adalah_df_robot_sen0244_gravity_analog_tds_sensor_memiliki_akurasi_dengan_besaran_error_hanya_sebesar_kurang_dari_10"
             android:textSize="15sp" />
 
     </LinearLayout>
