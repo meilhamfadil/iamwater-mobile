@@ -155,27 +155,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sensorwarna"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="157dp"
-            android:layout_height="161dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/sensorwarna" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:text="@string/o1"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/_4_sensor_ec"
             android:textSize="15sp"
             android:textStyle="bold" />

@@ -64,7 +64,7 @@
     <string name="label_history">Histories</string>
     <string name="label_qos">QoS</string>
     <string name="sensor_electrical_conductivity_yang_digunakan_adalah_df_robot_dfr0300_gravity_analog_electrical_conductivity_sensor_meter_v2_memiliki_akurasi_dengan_besaran_error_hanya_sebesar_5">Sensor electrical conductivity yang digunakan adalah DF Robot DFR0300. Gravity: Analog Electrical Conductivity Sensor /Meter V2 memiliki akurasi dengan besaran error hanya sebesar 5%.</string>
-    <string name="_4_sensor_ec">4. Sensor EC</string>
-    <string name="_5_sensor_tds">5. Sensor TDS</string>
+    <string name="_4_sensor_ec">3. Sensor EC</string>
+    <string name="_5_sensor_tds">4. Sensor TDS</string>
     <string name="sensor_electrical_conductivity_yang_digunakan_adalah_df_robot_sen0244_gravity_analog_tds_sensor_memiliki_akurasi_dengan_besaran_error_hanya_sebesar_kurang_dari_10">Sensor electrical conductivity yang digunakan adalah DF Robot SEN0244. Gravity: Analog TDS Sensor memiliki akurasi dengan besaran error hanya sebesar kurang dari 10%.</string>
 </resources>
